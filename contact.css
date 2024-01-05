@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family:  Georgia;
+}
+/*on screen that are 1024px wide or lesser*
+@media screen and (min-width: 769px) {*/
+
+    
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        background-color: orange;
+        padding: 12px 60px;
+        padding-bottom: 2px;
+        padding-top: 5px;
+    
+        
+    }
+    nav a{
+        color: black;
+        font-size: 17px;
+        text-decoration: none;
+        
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .menu ul li{
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+    .menu-wrap .toggler{
+        display: none;
+    }
+    .menu-wrap .menu > div > div > ul > li{
+        list-style: none;
+    }
+    .menu li a:hover {
+        background-color:#f32020;
+        color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 30px rgb(0 0 0 / 10%);
+    }
+    .sub-menu{
+        display: none;
+    
+    } 
+    .sub-menu ul li{
+    list-style: none;
+    
+    }
+    .sub-menu ul li a{
+        color: blak;
+    }
+      .menu ul li:hover .sub-menu{
+        display: block;
+        position: absolute;
+        background-color: orange;
+        margin-top: 2px;
+        margin-left: -100px;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 2px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    
+    }
+    .menu-wrap .menu ul li:hover .sub-menu ul{
+        display: inline-block;
+    }
+
+    .menu-wrap .menu ul li:hover .sub-menu ul li{
+        border-bottom: 1px  black;
+    }
+
+
+.onynxfood{
+    padding-top: 50px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    border: 20px solid orange;
+}
+.contact2{
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 50%;
+}
+.contact2 h2{
+    margin-bottom: 5%;
+}
+.contact2 h3{
+    margin-top: 15%;
+    margin-bottom: 3%;
+}

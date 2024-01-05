@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family:  Georgia;
+    background-color: white;
+}
+
+/*on screen that are 1024px wide or lesser*
+@media screen and (min-width: 769px) {*/
+
+    
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+        background-color: orange;
+        padding: 12px 60px;
+        padding-bottom: 2px;
+        padding-top: 5px;
+    
+        
+    }
+    nav a{
+        color: black;
+        font-size: 17px;
+        text-decoration: none;
+        
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .menu ul li{
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+    .menu-wrap .toggler{
+        display: none;
+    }
+    .menu-wrap .menu > div > div > ul > li{
+        list-style: none;
+    }
+    .menu li a:hover {
+        background-color:#f32020;
+        color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 30px rgb(0 0 0 / 10%);
+    }
+    .sub-menu{
+        display: none;
+    
+    } 
+    .sub-menu ul li{
+    list-style: none;
+    
+    }
+    .sub-menu ul li a{
+        color: black;
+    }
+      .menu ul li:hover .sub-menu{
+        display: block;
+        position: absolute;
+        background-color: orange;
+        margin-top: 2px;
+        margin-left: -100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+    
+    }
+    .menu-wrap .menu ul li:hover .sub-menu ul{
+        display: inline-block;
+    }
+
+    .menu-wrap .menu ul li:hover .sub-menu ul li{
+        border-bottom: 1px  black;
+    }
+
+
+
+
+
+.onynxfood{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.packaging{
+    border: 10px solid orange;
+    background-color: white;
+    color: black;
+}
+.packaging p{
+    margin-top: 5%;
+}
+
+.silver, .gold, .platinum{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+
+.silver_2, .gold_2, .platinum_2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    line-height: 35px;
+    font-size: 30px;
+
+}
+.silver_2 h2, .gold_2 h2, .platinum_2 h2{
+    margin-bottom: 5%;
+    letter-spacing: 5px;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+    @keyframes slidein{
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+        to{
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+
+    
+
+.silver img{
+    margin-left: 10%;
+    border-radius: 100%
+}
+
+.gold img, .platinum img{
+    margin-left: 10%;
+    border-radius: 50%
+}
+
+
+
+
+.main2{
+    background-color: orange;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
